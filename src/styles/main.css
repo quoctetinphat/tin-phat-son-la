@@ -185,3 +185,53 @@ footer{border-top:3px solid #c8102e}
 .bg-fixed{inset:0;min-height:100lvh;filter:none;transform:none;background:var(--dam) center 62%/cover no-repeat}
 .bg-sharp{display:none}
 @media (max-width:900px){.bg-fixed{background-attachment:scroll;background-position:42% 62%}}
+@media (max-width:600px){
+  .shell{width:min(100% - 32px,560px)}
+  body{font-size:15px;line-height:1.6}
+  .bar{height:64px;gap:10px}
+  .brand{gap:8px;font-size:17px;letter-spacing:.08em}
+  .brand small{font-size:8px;letter-spacing:.2em}
+  .brand .mk{height:36px}
+  .hero{padding:42px 0 56px;gap:30px}
+  h1{font-size:clamp(39px,12vw,56px);line-height:1.02}
+  h2{font-size:clamp(32px,10vw,44px)}
+  h3{font-size:25px}
+  .eyebrow{font-size:10px;letter-spacing:.18em;gap:9px;margin-bottom:14px}
+  .eyebrow::before{width:24px}
+  .hero p.lead{font-size:16px;margin:20px 0 28px}
+  .actions{gap:16px;align-items:stretch}
+  .actions .btn{width:100%;justify-content:center}
+  .actions .text-link{align-self:center}
+  .panel{min-height:320px;padding:38px 26px;border-radius:22px}
+  .panel::after{inset:10px}
+  .panel svg{width:270px;top:-20px;right:-60px}
+  .panel .big{font-size:clamp(36px,11vw,50px)}
+  section.block{padding:58px 0 48px}
+  .about,.consult{gap:30px}
+  .hero>.rv:first-child,.about>.rv:first-child,.head>div:first-child,.consult>.rv:first-child{padding:8px 0}
+  .about .copy p{font-size:17px}
+  .solution-card{padding:14px;border-radius:20px}
+  .solution-card h3{font-size:23px;margin-bottom:16px}
+  .solution-card img{border-radius:12px}
+  .pillars{grid-template-columns:1fr}
+  .pillars div{padding:16px;border-right:0;border-bottom:1px solid var(--line);font-size:20px}
+  .pillars div:last-child{border-bottom:0}
+  .head{margin-bottom:30px;gap:18px}
+  .head p.intro{font-size:15px}
+  .grid{gap:14px}
+  .card{padding:28px 22px 24px}
+  .card .num{font-size:46px}
+  .card h3{margin:18px 0 10px}
+  .card p,.card ul,.why ul{font-size:14px}
+  .steps{grid-template-columns:1fr;row-gap:24px}
+  .steps li{padding:24px 0 0}
+  .steps b{font-size:38px}
+  .flow{gap:22px}
+  .flow li{flex-basis:100%;padding:18px}
+  .flow li:not(:last-child)::after{bottom:-21px}
+  form{padding:24px 20px;gap:18px}
+  input,select,textarea{font-size:16px}
+  .btn{padding:13px 18px;font-size:12px}
+  footer{padding:52px 0 38px}
+  .foot{gap:30px}
+}
