@@ -27,10 +27,16 @@ jobs:
         uses: actions/configure-pages@v5
         with:
           enablement: true
+      - name: Prepare site
+        run: |
+          mkdir -p dist
+          cp -R public/. dist/
+          cp -R src dist/src
+          sed -i 's#../src/#src/#g' dist/index.html
       - name: Upload website
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./public
+          path: ./dist
       - name: Deploy
         id: deployment
         uses: actions/deploy-pages@v4
