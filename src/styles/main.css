@@ -219,10 +219,14 @@ footer{border-top:3px solid #c8102e}
   .head{margin-bottom:30px;gap:18px}
   .head p.intro{font-size:15px}
   .grid{gap:14px}
-  .card{padding:28px 22px 24px}
+  .card{grid-column:auto!important;width:100%;min-width:0;padding:24px 20px 22px;overflow:hidden}
   .card .num{font-size:46px}
-  .card h3{margin:18px 0 10px}
+  .card h3{margin:14px 0 10px;font-size:24px;line-height:1.12}
   .card p,.card ul,.why ul{font-size:14px}
+  .card ul{margin:14px 0 20px}
+  .card li{padding:8px 0 8px 18px;overflow-wrap:anywhere}
+  .card li::before{top:16px}
+  .card a{font-size:11px}
   .steps{grid-template-columns:1fr;row-gap:24px}
   .steps li{padding:24px 0 0}
   .steps b{font-size:38px}
